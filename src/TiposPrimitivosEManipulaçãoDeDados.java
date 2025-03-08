@@ -1,6 +1,6 @@
 //Aula sobre tipos primitivos e manipulação de dados
 import java.util.Scanner;
-public class TiposPrimitivosEManipulaçãoDeImagens {
+public class TiposPrimitivosEManipulaçãoDeDados {
     public static void main(String[] args){
          //int idade = 3; (atribuindo um valor inteiro)
          //int idade = (int) 3; (int) <- Considere esse 3 como inteiro (typecast)
