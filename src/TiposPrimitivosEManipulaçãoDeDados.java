@@ -16,15 +16,15 @@ public class TiposPrimitivosEManipulaçãoDeDados {
          System.out.format("A nota de %s é %.2f\n",nome, nota);
          System.out.print("A nota de " + nome +" é " + nota);
 
-         //Entrada de dados
-         Scanner teclado =  new Scanner(System.in);
+         try (//Entrada de dados
+        Scanner teclado = new Scanner(System.in)) {
+            System.out.print("\nDigite o nome do aluno: ");
+             String nome2 = teclado.nextLine();
+             System.out.println("Digite a nota do aluno: ");
+             float nota2 = teclado.nextFloat();
 
-         System.out.print("\nDigite o nome do aluno: ");
-         String nome2 = teclado.nextLine();
-         System.out.println("Digite a nota do aluno: ");
-         float nota2 = teclado.nextFloat();
-
-         System.out.format("A nota de %s é %.2f\n",nome2, nota2);
+             System.out.format("A nota de %s é %.2f\n",nome2, nota2);
+        }
 
          //Incompatibilidades
          int num = 30;
